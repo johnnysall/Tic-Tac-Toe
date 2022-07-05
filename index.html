@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div id="Header">
+        Tic Tac Toe
+    </div>
+
+    <div id="indexMain">
+        <div id="playerorAIContainer">
+            <div class="btn" id="aiBtn">AI</div>
+            <div class="btn" id="playerBtn">Player</div>
+        </div>
+
+        <div id="playerAITitle">Player vs Player</div>
+
+        <div id="playerInfoContainer">
+            <div id="p1Container">
+                <form>
+                    <caption>Player 1</caption>
+
+                    <label for="P1Name">Name</label>
+                    <input type="text" id="P1Name" name="Name" placeholder="Your Name..">
+                
+                    <label for="P1Symbol">Symbol</label>
+                    <input type="text" id="P1Symbol" name="Symbol" placeholder="Your Symbol..">
+                </form>
+            </div>
+            <div id="p2Container">
+                <form>
+                    <caption>Player 2</caption>
+
+                    <label for="P2Name">Name</label>
+                    <input type="text" id="P2Name" name="Name" placeholder="Your Name..">
+                
+                    <label for="P2Symbol">Symbol</label>
+                    <input type="text" id="P2Symbol" name="Symbol" placeholder="Your Symbol..">
+                </form>
+            </div>
+        </div>
+
+        <div class="btn" id="submitBtn">
+            Submit    
+        </div>
+
+    </div>
+
+    <div id="gamePageMain">
+        <div id="scoreContainer">
+            <div id="scoreText">Score:</div>
+            <div id="p1Score"></div>
+            <div id="p2Score"></div>
+            <div id="scoreVisualiser">
+                <div id="p1ScoreVis"></div>
+                <div id="p2ScoreVis"></div>
+            </div>
+        </div>
+        <div id="resetBtn" class="btn">
+            Reset
+        </div>
+        <div id="gameBoard">
+            <div id="gridContainer">
+                <div class="singleGrid emptyGrid" id="grid0"></div>
+                <div class="singleGrid emptyGrid" id="grid1"></div>
+                <div class="singleGrid emptyGrid" id="grid2"></div>
+                <div class="singleGrid emptyGrid" id="grid3"></div>
+                <div class="singleGrid emptyGrid" id="grid4"></div>
+                <div class="singleGrid emptyGrid" id="grid5"></div>
+                <div class="singleGrid emptyGrid" id="grid6"></div>
+                <div class="singleGrid emptyGrid" id="grid7"></div>
+                <div class="singleGrid emptyGrid" id="grid8"></div>
+            </div>
+        </div>
+        <div id="gameWinner">
+            <div id="winnerText"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
